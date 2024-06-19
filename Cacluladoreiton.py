@@ -27,13 +27,37 @@ def Div(num1,num2):
 
 
 while True:
-    try:
-        #solicitud de variable
-        op=int(input("\n¿Qué operación matemática desea realizar?\n\nOpción 1:\tSuma.\nOpción 2:\tResta\nOpción 3:\tMultiplicación\nOpción 4:\tDivisión\nOpción 5:\tSalir\n\nSeleccione el número de la opción escogida:\n/"));
-    except ValueError:
-        #mensaje de error
-        print("*Digíte una opción correcta*");
-    else:
-        #Opciones menú
-        print("hola");
-    
+    while True: 
+        try:
+            #solicitud de variable
+            print("----------------------------------------------")
+            op=int(input("\n¿Qué operación matemática desea realizar?\n\nOpción 1:\tSuma.\nOpción 2:\tResta\nOpción 3:\tMultiplicación\nOpción 4:\tDivisión\nOpción 5:\tSalir\n\nSeleccione el número de la opción escogida:\n/"));
+        except ValueError:
+            #mensaje de error
+            print("----------------------------------------------")
+            print("Digíte una opción correcta");
+        else:
+            break;
+
+    if op == 1:
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num1 = int(input("Ingrese el primer numero que desee sumar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num2 = int(input("Ingrese el segundo numero que desee sumar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+
+        sumar(f"El resultado de la suma es: {sumar(num1,num2)}")
