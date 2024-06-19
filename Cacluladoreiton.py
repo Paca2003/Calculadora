@@ -65,3 +65,75 @@ while True:
                 break;
         print("----------------------------------------------")
         print(f"El resultado de la suma es: {sumar(num1,num2)}")
+
+    elif op == 2:
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num1 = int(input("Ingrese el primer numero que desee restar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num2 = int(input("Ingrese el segundo numero que desee restar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+        print("----------------------------------------------")
+        print(f"El resultado de la resta es: {restar(num1,num2)}")
+
+    elif op == 3:
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num1 = int(input("Ingrese el primer numero que desee multiplicar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num2 = int(input("Ingrese el segundo numero que desee multiplicar\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+        print("----------------------------------------------")
+        print(f"El resultado de la multiplicación es: {Mult(num1,num2)}")
+    
+    elif op == 4:
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num1 = int(input("Ingrese el primer numero que desee dividir\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+
+        while True:
+            try:    
+                print("----------------------------------------------")
+                num2 = int(input("Ingrese el segundo numero que desee dividir\n"))
+            except ValueError:
+                print("----------------------------------------------")
+                print("Numero no valido, vuelva a ingresar")
+            else:
+                break;
+        print("----------------------------------------------")
+        print(f"El resultado de la divición es: {Div(num1,num2)}")
+
+    if op == 5:
+        break;
