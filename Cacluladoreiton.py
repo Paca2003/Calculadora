@@ -60,4 +60,4 @@ while True:
             else:
                 break;
 
-        sumar(f"El resultado de la suma es: {sumar(num1,num2)}")
+        print(f"El resultado de la suma es: {sumar(num1,num2)}")
