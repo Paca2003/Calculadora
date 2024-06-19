@@ -32,12 +32,16 @@ while True:
             #solicitud de variable
             print("----------------------------------------------")
             op=int(input("\n¿Qué operación matemática desea realizar?\n\nOpción 1:\tSuma.\nOpción 2:\tResta\nOpción 3:\tMultiplicación\nOpción 4:\tDivisión\nOpción 5:\tSalir\n\nSeleccione el número de la opción escogida:\n/"));
-        except ValueError or (op>0 and op<6):
+        except ValueError:
             #mensaje de error
             print("----------------------------------------------")
             print("Digíte una opción correcta");
         else:
-            break;
+            if op < 1 or op > 5:
+                print("----------------------------------------------")
+                print("Digíte una opción correcta");
+            else:
+                break;
 
     if op == 1:
         while True:
@@ -59,5 +63,5 @@ while True:
                 print("Numero no valido, vuelva a ingresar")
             else:
                 break;
-
+        print("----------------------------------------------")
         print(f"El resultado de la suma es: {sumar(num1,num2)}")
