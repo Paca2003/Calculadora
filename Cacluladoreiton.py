@@ -1,6 +1,7 @@
 # Este es el arcivo python en el cual mis companeros y yo trabajaremos para
 # Crear una calculadora de manera colaborativa
 
+
 #Definir funciones
 
 #Suma
@@ -25,7 +26,6 @@ def Div(num1,num2):
         return "SYNTAX ERROR"
 
 
-# Version nuev
 while True:
     try:
         #solicitud de variable
