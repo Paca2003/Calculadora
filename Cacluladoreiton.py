@@ -32,7 +32,7 @@ while True:
             #solicitud de variable
             print("----------------------------------------------")
             op=int(input("\n¿Qué operación matemática desea realizar?\n\nOpción 1:\tSuma.\nOpción 2:\tResta\nOpción 3:\tMultiplicación\nOpción 4:\tDivisión\nOpción 5:\tSalir\n\nSeleccione el número de la opción escogida:\n/"));
-        except ValueError:
+        except ValueError or (op>0 and op<6):
             #mensaje de error
             print("----------------------------------------------")
             print("Digíte una opción correcta");
